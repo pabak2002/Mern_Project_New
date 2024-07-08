@@ -13,7 +13,7 @@ export const QuizList: React.FC = () => {
 
   return (
     <div >
-      <Link to={`/quiz/create`} className="text-2xl block bg-green-500 font-bold text-white rounded-xl w-fit p-6 px-12 m-4 mx-auto hover:bg-green-600 shadow-xl">Create quiz</Link>
+      <Link to={`./create`} className="text-2xl block bg-green-500 font-bold text-white rounded-xl w-fit p-6 px-12 m-4 mx-auto hover:bg-green-600 shadow-xl">Create quiz</Link>
       {quizzes.length === 0 ?
         <div className="min-h-screen text-4xl flex justify-center items-center text-gray-500">Create new quizzes</div> :
         <div id="quiz-list" className="font-bold h-full text-center min-h-screen grid grid-cols-3 list-none text-gray-500">
