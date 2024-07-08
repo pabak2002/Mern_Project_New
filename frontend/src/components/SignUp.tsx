@@ -46,7 +46,7 @@ export const SignUp: React.FC = () => {
   };
 
   const navigateToSignIn = () => {
-    navigate("/signin");
+    navigate("/");
   };
 
   return (
