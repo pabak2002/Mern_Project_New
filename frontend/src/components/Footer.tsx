@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer>
-      <span>© 2024 Copyright: Pabak Kundu</span>
+      <span>© 2024 Copyright: Pabak||Pratyush||Mubin||Kartik :Copyright 2024 ©</span>
     </footer>
   );
 };

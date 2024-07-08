@@ -79,7 +79,7 @@ export const CreateQuiz: React.FC = () => {
 
   return (
     <div className="min-h-screen font-bold text-center text-xl">
-      <Link to="/" className="text-xl font-bold rounded-xl bg-green-500 text-white w-fit p-4 px-8 m-4 fixed left-0 top-25 hover:bg-green-600 shadow-xl">
+      <Link to="/quiz" className="text-xl font-bold rounded-xl bg-green-500 text-white w-fit p-4 px-8 m-4 fixed left-0 top-25 hover:bg-green-600 shadow-xl">
         Return
       </Link>
       <Formik
@@ -87,7 +87,7 @@ export const CreateQuiz: React.FC = () => {
         onSubmit={(values) => {
           createQuiz({ ...values, questions: questions, ranking: [] } as QuizType).then(() => setRefresh(!refresh));
           dispatch(clearQuestion());
-          navigate('/');
+          navigate('/quiz');
         }}
       >
         {({ handleSubmit }) => (

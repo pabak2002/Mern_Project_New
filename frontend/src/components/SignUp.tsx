@@ -20,7 +20,7 @@ export const SignUp: React.FC = () => {
 
     try {
       const res = await axios.post(
-        "https://mern-project-new-1.onrender.com/signup",
+        "http://localhost:5000/signup",
         {
           username,
           password,
