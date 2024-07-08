@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Quiz, Ranking } from '../models';
 
-const baseUrl = 'https://mern-project-fdlq.onrender.com';
+const baseUrl = 'https://mern-project-new-1.onrender.com';
 
 export const getQuizzes = async () => {
   try {
